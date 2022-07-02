@@ -8,7 +8,30 @@
 }
 .container{
   width:100%;
-  max-width: 1300px;
+  max-width: 85vw;
   margin:0 auto;
 
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: none;
+  outline-style: none;
+  border-style: none;
+  background-color: blue;
+}
+.carousel__dot + .carousel__dot {
+  margin-left: 10px;
+}
+.carousel__dot--selected {
+  background: red;
 }
